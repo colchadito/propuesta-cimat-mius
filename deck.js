@@ -101,6 +101,8 @@
   var cover = initNet('cvNet', 'cvArt', netCfg);
   var section = initNet('scNet', 'scArt', { nodes: 44, cols: netCfg.cols, glyph: '255,255,255', glyphA: [.04, .09], lineA: .26 });
 
+  var closing = initNet('ceNet', 'ceArt', { nodes: 52, cols: netCfg.cols, glyph: '255,255,255', glyphA: [.05, .12], lineA: .3 });
+
   /* ---------------------------------------------------------------- plataforma Health Tower Intelligence */
   var IDLE_HTML = '<div class="idle-ico" aria-hidden="true"><svg viewBox="0 0 76 76"><rect class="slot" x="42" y="42" width="26" height="26" rx="7"/><rect class="mA" x="8" y="8" width="26" height="26" rx="7"/><rect class="mB" x="42" y="8" width="26" height="26" rx="7"/><rect class="mC" x="8" y="42" width="26" height="26" rx="7"/><rect class="mD" x="42" y="42" width="26" height="26" rx="7"/></svg></div>' +
     '<div class="idle-body"><p class="idle-lead">Una <b class="k1">plataforma modular</b> que integra los <b class="k2">datos de la operación</b> (<span class="dm d1">inventario</span>, <span class="dm d2">logística</span>, <span class="dm d3">equipos y clínicas</span>) y los convierte en <b class="k3">decisiones</b> mediante <b class="k4">analítica, optimización e inteligencia artificial</b>.</p>' +
@@ -152,6 +154,7 @@
     Array.prototype.forEach.call(s.querySelectorAll('[data-count]'), function (el) { if (STATIC) { el.textContent = fmt(el, parseFloat(el.getAttribute('data-count'))); } else { setTimeout(function () { countUp(el); }, 520); } });
     if (id === 'sl-cover') cover.start(); else cover.stop();
     if (id === 'sl-section') section.start(); else section.stop();
+    if (id === 'sl-close') closing.start(); else closing.stop();
     if (id === 'sl-platform') { platform.redraw(); setTimeout(function () { platform.redraw(); }, 700); }
     Array.prototype.forEach.call(ovg.children, function (b, k) { b.classList.toggle('cur', k === i); });
   }

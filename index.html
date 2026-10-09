@@ -36,7 +36,13 @@
   <!-- 1 · Portada (elementos dinámicos de la presentación actual) -->
   <section class="slide dark s-cover" id="sl-cover" data-title="Centro de Investigación en Matemáticas A.C." data-kicker="Portada" data-sec="0">
     <canvas class="cv-net" id="cvNet" width="1280" height="720" aria-hidden="true"></canvas>
-    <img class="cv-logo" src="assets/logo-white.webp" alt="CIMAT">
+    <div class="ce-stage ce-mini" aria-hidden="true">
+      <i class="ce-glow"></i>
+      <svg class="ce-ring r1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#00A9F4" stroke-width="1.6" stroke-dasharray="2 9" stroke-linecap="round"/><circle cx="100" cy="4" r="4.5" fill="#00A9F4"/></svg>
+      <svg class="ce-ring r2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#9FDDFF" stroke-width="1.2" stroke-dasharray="40 14 4 14"/><circle cx="100" cy="196" r="3.5" fill="#fff"/></svg>
+      <svg class="ce-ring r3" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#2251FF" stroke-width="2" stroke-dasharray="90 210" stroke-linecap="round"/></svg>
+      <div class="ce-logo"><img src="assets/logo-white.webp" alt="CIMAT"><i class="ce-sheen"></i></div>
+    </div>
     <div class="cv-art" id="cvArt">
       <div class="cv-back"></div>
       <svg class="cv-outline" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polygon points="17,0 100,0 100,100 0,100" fill="none" stroke="#00A9F4" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
@@ -54,19 +60,17 @@
         <span class="ln" style="--d:2"><b>en Matemáticas</b><em>A.C.</em></span>
       </h1>
       <div class="cv-rule"></div>
-      <p class="lead rv" style="--i:4">Un <b>Centro Público de Investigación</b> dedicado a la generación y transferencia del conocimiento matemático, científico y tecnológico para el desarrollo de México, enfocado en investigación aplicada, formación de talento y soluciones innovadoras para los sectores académico, científico y productivo.</p>
-      <div class="cv-stats rv" style="--i:6">
-        <div><span class="n" data-count="140" data-prefix="+">+140</span><small>Investigadores</small></div>
-        <div><span class="n" data-count="5">5</span><small>Sedes en México</small></div>
-        <div><span class="n" data-count="3930" data-sep="1">3,930</span><small>Cores de supercómputo</small></div>
-      </div>
     </div>
   </section>
 
   <!-- 2 · ¿Qué es el CIMAT? -->
   <section class="slide s2" data-title="¿Qué es el CIMAT?" data-kicker="Nosotros" data-sec="1">
     <div class="head"><p class="kick rv" style="--i:0">Nosotros</p><h2 class="ttl rv" style="--i:1">¿Qué es el CIMAT?</h2></div>
-    <p class="txt rv" style="--i:2">El Centro de Investigación en Matemáticas A.C. es un <b>Centro Público de Investigación de la Secihti</b>, dedicado a la investigación, la formación de recursos humanos de alto nivel, la vinculación con los sectores productivos y la divulgación del conocimiento matemático y científico. Su misión es contribuir al desarrollo científico y tecnológico de México mediante la transferencia e implementación de soluciones innovadoras.</p>
+    <div class="txt s2-hero rv" style="--i:2">
+      <i class="hb" aria-hidden="true"></i>
+      <p class="big">Matemáticas que se vuelven <span class="hw">soluciones</span> para el desarrollo de México.</p>
+      <p class="sup">Somos un <b>Centro Público de Investigación de la Secihti</b> que genera conocimiento, forma talento de alto nivel, conecta la ciencia con los sectores productivos y la acerca a la sociedad.</p>
+    </div>
     <div class="mapimg rv" style="--i:3"><img src="assets/map.webp" alt="Mapa de las cinco sedes: Guanajuato, Monterrey, Aguascalientes, Mérida y Zacatecas"></div>
     <div class="pillars">
       <div class="pil rv" style="--i:4"><svg class="ic"><use href="#i-flask"/></svg><h3>Investigación</h3><p>Generación de conocimiento científico y técnico en las líneas de investigación del Centro.</p></div>
@@ -86,7 +90,14 @@
       <div class="card acc stat rv" style="--i:5"><span class="n" data-count="67">67</span><b>Personal de Apoyo</b><span class="d">Personal administrativo y de soporte a la operación</span></div>
       <div class="card acc stat rv" style="--i:6"><span class="n" data-count="5">5</span><b>Sedes</b><span class="d">Guanajuato, Monterrey, Aguascalientes, Mérida y Zacatecas</span></div>
     </div>
-    <div class="note rv" style="--i:7"><svg class="ic"><use href="#i-info"/></svg><span><b>Supercómputo:</b> 2 clústeres — uno en Guanajuato con 2,288 cores y otro en Puerto Interior, Silao con 1,642 cores, más de 200 servidores distribuidos entre todas sus sedes.</span></div>
+    <div class="card acc hpc rv" style="--i:7">
+      <div class="hh"><svg class="ic"><use href="#i-info"/></svg><span>Supercómputo</span><em>2 clústeres</em></div>
+      <div class="hms">
+        <div class="hm"><span class="n" data-count="2288" data-sep="1">2,288</span><b>cores</b><small>Guanajuato</small><i class="cells" aria-hidden="true"></i></div>
+        <div class="hm"><span class="n" data-count="1642" data-sep="1">1,642</span><b>cores</b><small>Puerto Interior, Silao</small><i class="cells c2" aria-hidden="true"></i></div>
+        <div class="hm"><span class="n" data-count="200" data-prefix="+">+200</span><b>servidores</b><small>Distribuidos en todas las sedes</small><i class="cells c3" aria-hidden="true"></i></div>
+      </div>
+    </div>
     <div class="frame rv" style="--i:2"><img src="assets/hands.webp" alt="Investigadora explicando en el pizarrón"></div>
   </section>
 
@@ -95,8 +106,8 @@
     <div class="head"><p class="kick rv" style="--i:0">Investigación</p><h2 class="ttl rv" style="--i:1">Áreas y Líneas de Investigación</h2>
       <p class="lead rv" style="--i:2">El CIMAT genera conocimiento científico de frontera a través de la investigación en sus cuatro grandes áreas de especialidad, buscando contribuir al desarrollo científico y tecnológico de México mediante la colaboración multidisciplinaria y la transferencia del conocimiento.</p></div>
     <div class="grid">
-      <div class="card acc rv" style="--i:3"><h3>Matemáticas Básicas</h3><ul class="bl"><li>Algebraica y Análisis</li><li>Ecuaciones Diferenciales Parciales</li><li>Geometría Diferencial</li><li>Sistemas Dinámicos y Topología</li></ul></div>
-      <div class="card acc rv" style="--i:4"><h3>Ciencias de la Computación</h3><ul class="bl"><li>Aprendizaje Máquina y PLN</li><li>Ingeniería del Software</li><li>Cómputo Paralelo y Optimización</li><li>Procesamiento de Señales</li><li>Imágenes y Visión Computacional</li><li>Robótica y Sistemas Inteligentes</li></ul></div>
+      <div class="card acc rv" style="--i:3"><h3>Matemáticas Básicas</h3><ul class="bl"><li>Álgebra y Análisis</li><li>Ecuaciones Diferenciales Parciales</li><li>Geometría Diferencial</li><li>Sistemas Dinámicos y Topología</li></ul></div>
+      <div class="card acc rv" style="--i:4"><h3>Ciencias de la Computación</h3><ul class="bl"><li>Aprendizaje Máquina y PLN</li><li>Ingeniería de Software</li><li>Cómputo Paralelo y Optimización</li><li>Procesamiento de Señales</li><li>Imágenes y Visión Computacional</li><li>Robótica y Sistemas Inteligentes</li></ul></div>
       <div class="card acc rv" style="--i:5"><h3>Probabilidad y Estadística</h3><ul class="bl"><li>Estadística Aplicada e Inferencia</li><li>Modelación Estocástica</li><li>Teoría de la Probabilidad</li></ul></div>
       <div class="card acc rv" style="--i:6"><h3>Matemáticas Aplicadas</h3><ul class="bl"><li>Análisis Numérico</li><li>Cómputo Científico</li><li>Biomatemáticas y Análisis Aplicado</li><li>Problemas Inversos</li><li>Cuantificación de Incertidumbre</li><li>Economía Matemática</li></ul></div>
     </div>
@@ -187,6 +198,20 @@
       </div>
     </div>
     <p class="src">Fuente: proyectos de vinculación del CIMAT; oportunidades identificadas a partir del perfil público de Consorcio Médico Mius.</p>
+  </section>
+
+  <!-- 16 · Optimización de la cadena de valor -->
+  <section class="slide s16" data-title="Ciencia de datos, estadística y optimización integran la cadena de valor de Mius de punta a punta" data-kicker="Optimización de la cadena de valor" data-sec="2">
+    <div class="band"><img src="assets/bars.webp" alt=""></div>
+    <div class="head"><p class="kick rv" style="--i:0">Optimización de la cadena de valor</p><h2 class="ttl rv" style="--i:1">Ciencia de datos, estadística y optimización integran la cadena de valor de Mius de punta a punta</h2>
+      <p class="lead rv" style="--i:2;font-size:14.5px">El CIMAT ofrece soluciones integrales para la optimización de cadenas de suministro y distribución, integrando modelos matemáticos avanzados con análisis geoespacial para apoyar la toma de decisiones estratégicas en los sectores comercial, industrial y gubernamental.</p></div>
+    <div class="bar rv" style="--i:3"><span>Ciencia de Datos</span><i>+</i><span>Estadística</span><i>+</i><span>Optimización</span></div>
+    <div class="quad">
+      <div class="card acc qc rv" style="--i:4"><h3>Pronóstico de la Demanda</h3><p>Modelos para anticipar la compra de materia prima, planear la producción y gestionar inventarios con mayor precisión.</p><div class="em"><span class="tg">En Mius</span>Anticipar compras a laboratorios y fabricantes por clave y por almacén.</div></div>
+      <div class="card acc qc rv" style="--i:5"><h3>Análisis de Lealtad y Clasificación</h3><p>Clasificación de clientes y proveedores para optimizar relaciones comerciales y definir esquemas de distribución más eficientes.</p><div class="em"><span class="tg">En Mius</span>Priorizar cadenas, farmacias, hospitales y distribuidores por valor y riesgo.</div></div>
+      <div class="card acc qc rv" style="--i:6"><h3>Trazabilidad en la Producción</h3><p>Seguimiento en tiempo real de procesos productivos para reducir costos y mejorar el control de calidad en toda la cadena.</p><div class="em"><span class="tg">En Mius</span>Seguimiento de lotes y caducidades del almacén al cliente.</div></div>
+      <div class="card acc qc rv" style="--i:7"><h3>Análisis Geoespaciales</h3><p>Evaluación de puntos de venta y pronóstico de ventas esperadas mediante modelos georeferenciados para la toma de decisiones estratégicas.</p><div class="em"><span class="tg">En Mius</span>Ubicar almacenes y definir rutas según la demanda de cada región.</div></div>
+    </div>
   </section>
 
   <!-- 10 · Caso 1 -->
@@ -328,20 +353,6 @@
     <p class="src">Fuente: proyecto CIMAT con LAPCIC Análisis Clínicos; investigación CIMAT en procesamiento de imágenes en salud.</p>
   </section>
 
-  <!-- 16 · Optimización de la cadena de valor -->
-  <section class="slide s16" data-title="Ciencia de datos, estadística y optimización integran la cadena de valor de Mius de punta a punta" data-kicker="Optimización de la cadena de valor" data-sec="2">
-    <div class="band"><img src="assets/bars.webp" alt=""></div>
-    <div class="head"><p class="kick rv" style="--i:0">Optimización de la cadena de valor</p><h2 class="ttl rv" style="--i:1">Ciencia de datos, estadística y optimización integran la cadena de valor de Mius de punta a punta</h2>
-      <p class="lead rv" style="--i:2;font-size:14.5px">El CIMAT ofrece soluciones integrales para la optimización de cadenas de suministro y distribución, integrando modelos matemáticos avanzados con análisis geoespacial para apoyar la toma de decisiones estratégicas en los sectores comercial, industrial y gubernamental.</p></div>
-    <div class="bar rv" style="--i:3"><span>Ciencia de Datos</span><i>+</i><span>Estadística</span><i>+</i><span>Optimización</span></div>
-    <div class="quad">
-      <div class="card acc qc rv" style="--i:4"><h3>Pronóstico de la Demanda</h3><p>Modelos para anticipar la compra de materia prima, planear la producción y gestionar inventarios con mayor precisión.</p><div class="em"><span class="tg">En Mius</span>Anticipar compras a laboratorios y fabricantes por clave y por almacén.</div></div>
-      <div class="card acc qc rv" style="--i:5"><h3>Análisis de Lealtad y Clasificación</h3><p>Clasificación de clientes y proveedores para optimizar relaciones comerciales y definir esquemas de distribución más eficientes.</p><div class="em"><span class="tg">En Mius</span>Priorizar cadenas, farmacias, hospitales y distribuidores por valor y riesgo.</div></div>
-      <div class="card acc qc rv" style="--i:6"><h3>Trazabilidad en la Producción</h3><p>Seguimiento en tiempo real de procesos productivos para reducir costos y mejorar el control de calidad en toda la cadena.</p><div class="em"><span class="tg">En Mius</span>Seguimiento de lotes y caducidades del almacén al cliente.</div></div>
-      <div class="card acc qc rv" style="--i:7"><h3>Análisis Geoespaciales</h3><p>Evaluación de puntos de venta y pronóstico de ventas esperadas mediante modelos georeferenciados para la toma de decisiones estratégicas.</p><div class="em"><span class="tg">En Mius</span>Ubicar almacenes y definir rutas según la demanda de cada región.</div></div>
-    </div>
-  </section>
-
   <!-- 17 · NUEVO · Plataforma (slide 11 de la presentación actual) -->
   <section class="slide s-plat" id="sl-platform" data-title="Health Tower Intelligence" data-kicker="Propuesta de plataforma" data-sec="2">
     <div class="head"><p class="kick rv" style="--i:0">Propuesta de plataforma · Consorcio Médico Mius</p><h2 class="ttl rv" style="--i:1">Health Tower Intelligence</h2></div>
@@ -402,13 +413,32 @@
     <img class="facade rv" style="--i:2" src="assets/facade.webp" alt="Fachada del CIMAT">
   </section>
 
+  <!-- 21 · Cierre -->
+  <section class="slide dark s-close" id="sl-close" data-title="Gracias" data-kicker="Cierre" data-sec="0">
+    <canvas class="cv-net" id="ceNet" width="1280" height="720" aria-hidden="true"></canvas>
+    <div class="ce-stage" id="ceArt" aria-hidden="true">
+      <i class="ce-glow"></i>
+      <svg class="ce-ring r1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#00A9F4" stroke-width="1.6" stroke-dasharray="2 9" stroke-linecap="round"/><circle cx="100" cy="4" r="4.5" fill="#00A9F4"/></svg>
+      <svg class="ce-ring r2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#9FDDFF" stroke-width="1.2" stroke-dasharray="40 14 4 14"/><circle cx="100" cy="196" r="3.5" fill="#fff"/></svg>
+      <svg class="ce-ring r3" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="#2251FF" stroke-width="2" stroke-dasharray="90 210" stroke-linecap="round"/></svg>
+      <div class="ce-logo"><img src="assets/logo-white.webp" alt="" ><i class="ce-sheen"></i></div>
+    </div>
+    <div class="ce-txt">
+      <p class="kicker rv" style="--i:0"><i class="pulse"></i>Centro de Investigación en Matemáticas, A.C.</p>
+      <h1 class="ce-title" aria-label="Gracias"><span class="ln"><b>Gracias</b></span></h1>
+      <div class="cv-rule"></div>
+      <p class="sub rv" style="--i:4">Ciencia, datos e innovación que impulsan la competitividad de la industria y el desarrollo de México.</p>
+      <p class="when rv" style="--i:6">cst@cimat.mx&nbsp;&nbsp;|&nbsp;&nbsp;www.cimat.mx</p>
+    </div>
+  </section>
+
   <nav class="tracker" aria-hidden="true"><span data-s="1">CIMAT</span><span data-s="2">Propuesta Mius</span><span data-s="3">Colaboración</span></nav>
   <div class="foot"><span class="pgn" id="pgn"></span><img class="flogo" src="assets/logo-footer.webp" alt="CIMAT · Centro de Investigación en Matemáticas, A.C."></div>
 </main>
 
 <div class="ui-bar" id="ui" role="toolbar" aria-label="Controles de la presentación">
   <button id="bPrev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <span class="cnt" id="cnt">1 / 20</span>
+  <span class="cnt" id="cnt">1 / 21</span>
   <button id="bNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   <button id="bOv" aria-label="Índice de diapositivas (G)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></button>
   <button id="bFs" aria-label="Pantalla completa (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
