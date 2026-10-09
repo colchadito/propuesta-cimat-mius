@@ -108,8 +108,9 @@
     '<p class="idle-hint"><svg class="cur" viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><path d="M3 2l12 6.2-5.2 1.6L7.6 15z" fill="currentColor"/></svg>Pasa el cursor o toca un módulo para ver cómo se conecta</p></div>';
   var platform = HTI.mount(document.getElementById('dg-platform'), {
     view: 'arq', compact: true, plain: true, static: true, start: false, idleHTML: IDLE_HTML,
-    // Sin hardware por ahora: se omiten red fría (IoT), visión en almacén (cámaras) y la fuente de sensores IoT
-    omitProjects: ['P4', 'P7'], omitSources: ['S3'],
+    // Sin hardware por ahora: se omiten red fría (IoT), visión en almacén (cámaras) y la fuente de sensores IoT.
+    // Sin mantenimiento predictivo (P3) por ahora.
+    omitProjects: ['P3', 'P4', 'P7'], omitSources: ['S3'],
     rename: { D2: { name: 'Logística', sub: 'Almacén, rutas y entregas' }, E4: { name: 'PLN y modelos de lenguaje' } }
   });
 
