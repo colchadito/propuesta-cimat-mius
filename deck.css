@@ -102,7 +102,7 @@ b,strong{font-weight:700}
 .cv-back{background:linear-gradient(160deg,var(--blue),#0B1E7A);transform:translate3d(calc(var(--mx)*16px - 28px),calc(var(--my)*10px + 24px),0)}
 .cv-outline{position:absolute;inset:0;width:100%;height:100%;overflow:visible;transform:translate3d(calc(var(--mx)*-22px + 16px),calc(var(--my)*-14px - 14px),0)}
 .cv-photo{overflow:hidden;transform:translate3d(calc(var(--mx)*-9px),calc(var(--my)*-7px),0)}
-.cv-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:62% 50%;transform-origin:55% 6%;animation:cv-kb 22s ease-in-out infinite alternate}
+.cv-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 55%;transform-origin:55% 6%;animation:cv-kb 22s ease-in-out infinite alternate}
 @keyframes cv-kb{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.17) translate(-2%,0)}}
 .cv-sheen{position:absolute;top:-10%;bottom:-10%;left:-45%;width:28%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-18deg);animation:cv-sheen 8s ease-in-out infinite 2.4s}
 @keyframes cv-sheen{0%{left:-45%}32%,100%{left:150%}}
@@ -506,3 +506,7 @@ b,strong{font-weight:700}
 .ce-mini .ce-ring.r2{inset:20px;width:calc(100% - 40px);height:calc(100% - 40px)}
 .ce-mini .ce-ring.r3{inset:-12px;width:calc(100% + 24px);height:calc(100% + 24px)}
 .s-cover .ce-logo{transition-delay:1.2s}
+.s-cover .cv-photo img{transform-origin:50% 50%;animation-name:cv-kb-soft}
+@keyframes cv-kb-soft{from{transform:scale(1) translate(0,0)}to{transform:scale(1.04) translate(-.5%,0)}}
+.s-cover .cv-photo img{animation:none;transform:none;object-position:50% 40%}
+.s-cover .cv-art{width:380px;right:70px}
